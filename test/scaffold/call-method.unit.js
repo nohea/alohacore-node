@@ -15,7 +15,7 @@ describe('#callMethod', function() {
 
   var callOptions = {
     host: 'localhost',
-    port: 3001,
+    port: 4001,
     protocol: 'http'
   };
 

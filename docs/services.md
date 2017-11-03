@@ -34,7 +34,7 @@ If, instead, you would like to run a custom node, you can include services by in
 
 ```js
 //Require bitcore
-var bitcore = require('bitcore-node');
+var bitcore = require('alohacore-node');
 
 //Services
 var Bitcoin = bitcore.services.Bitcoin;
@@ -57,7 +57,7 @@ var myNode = new bitcore.Node({
       name: 'web',
       module: Web,
       config: {
-        port: 3001
+        port: 4001
       }
     }
   ]

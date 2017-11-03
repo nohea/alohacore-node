@@ -94,8 +94,8 @@ describe('#add', function() {
       var callCount = 0;
       var oldPackage = {
         dependencies: {
-          'bitcore-lib': '^v0.13.7',
-          'bitcore-node': '^v0.2.0'
+          'alohacore-lib': '^v0.13.7',
+          'alohacore-node': '^v0.2.0'
         }
       };
       var spawn = sinon.stub().returns({

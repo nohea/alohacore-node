@@ -11,7 +11,7 @@ describe('#defaultConfig', function() {
   it('will return expected configuration', function() {
     var config = JSON.stringify({
       network: 'livenet',
-      port: 3001,
+      port: 4001,
       services: [
         'bitcoind',
         'web'
@@ -54,7 +54,7 @@ describe('#defaultConfig', function() {
   it('will include additional services', function() {
     var config = JSON.stringify({
       network: 'livenet',
-      port: 3001,
+      port: 4001,
       services: [
         'bitcoind',
         'web',
