@@ -1,0 +1,23 @@
+{
+  "network": "livenet",
+  "port": 4001,
+  "services": [
+    "bitcoind",
+    "insight-api",
+    "alohacore-wallet-service",
+    "web"
+  ],
+  "servicesConfig": {
+    "bitcoind": {
+      "connect": [
+        {
+            "rpchost": "127.0.0.1",
+            "rpcport": 9422,
+            "rpcuser": "bitcoinrpc",
+            "rpcpassword": "x",
+            "zmqpubrawtx": "tcp://127.0.0.1:29422"
+        }
+      ]
+    }
+  }
+}
