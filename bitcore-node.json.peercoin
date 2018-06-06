@@ -1,0 +1,71 @@
+{
+  "network": "testnet",
+  "port": 5001,
+  "services": [
+    "bitcoind",
+    "insight-api",
+    "alohacore-wallet-service",
+    "web"
+  ],
+  "servicesConfig": {
+    "bitcoind": {
+      "connect": [
+        {
+            "rpchost": "127.0.0.1",
+            "rpcport": 9904,
+            "rpcuser": "peercoinrpc",
+            "rpcpassword": "x",
+            "zmqpubrawtx": "tcp://127.0.0.1:29903"
+        }
+      ]
+    },
+    "alohacore-wallet-service": {
+      "bogus": "fake setting 1",
+      "basePath": "/bws/api",
+      "disableLogs": false,
+      "port": 5232,
+      "storageOpts": {
+	"mongoDb": {
+	  "uri": "mongodb://localhost:27017/bws-ppctestnet"
+	}
+      },
+      "lockerPort": 5231,
+      "lockOpts": {
+        "lockerServer": {
+          "host": "localhost",
+          "port": 5231
+        }
+      },
+      "messageBrokerPort": 5380,
+      "messageBrokerOpts": {
+	"messageBrokerServer": {
+	  "url": "http://localhost:5380"
+	}
+      },
+      "blockchainExplorerOpts": {
+	"provider": "iquidus",
+	"network": "livenet",
+	"url": "http://localhost:3551",
+	"apiPrefix": "/insight-api",
+	"feePerKb": 0.01 
+      },
+      "altcoinOpts": {
+	"ticker": "PPC",
+	"coinName": "Peercoin Testnet",
+	"minTxFee": 0.01
+      },
+      "pushNotificationsOpts": {
+	"templatePath": "./lib/templates",
+	"defaultLanguage": "en",
+	"defaultUnit": "ppc",
+	"subjectPrefix": "",
+	"pushServerUrl": "https://fcm.googleapis.com/fcm",
+	"authorizationKey": ""
+      },
+      "fiatRateServiceOpts": {
+	"defaultProvider": "BitPay",
+	"fetchInterval": 60
+      }
+    }
+  }
+}
