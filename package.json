@@ -41,14 +41,15 @@
     "bitcoind"
   ],
   "dependencies": {
-    "async": "^1.3.0",
     "alohacoind-rpc": "file:../alohacoind-rpc",
     "alohacore-lib": "file:../alohacore-lib",
+    "async": "^1.3.0",
     "body-parser": "^1.13.3",
     "colors": "^1.1.2",
     "commander": "^2.8.1",
     "errno": "^0.1.4",
     "express": "^4.13.3",
+    "json5": "^1.0.1",
     "liftoff": "^2.2.0",
     "lmdb": "rvagg/lmdb#5ad819f77714925248dfecb0ba2174080dba949f",
     "lru-cache": "^4.0.1",
